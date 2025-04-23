@@ -9,9 +9,14 @@ import UIKit
 
 class DetailsCell: UICollectionViewCell {
 
+    @IBOutlet weak var labelTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        layer.cornerRadius = 12
+        clipsToBounds = true
+        backgroundColor = .gray
+        labelTitle.textColor = .white
     }
 
 }
